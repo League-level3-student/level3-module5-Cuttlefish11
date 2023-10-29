@@ -17,11 +17,8 @@ public class _01_Factorial {
         
         // 3. else return n * factorial(n-1)
         else {
-        	int q = 1;
-        	for (int i = 1; i <= n; i++) {
-			q=q*(i+1);
-			}
-        return q;
+        	
+        return n * factorial(n-1);
         }
     }
 

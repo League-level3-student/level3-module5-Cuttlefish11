@@ -8,18 +8,16 @@ public class StringTrimmer {
      */
     static public String trimString(String str, int removesLeft) {
         // 1. If there are no removes left
-            if(removesLeft==0) {
+            if(removesLeft==0 || str.length()==0) {
             // 2. Return the string
             	 return str;
             }
         // 3. Else you need to remove the last letter from the string,
         //    reduce removesLeft by 1, and then call trimString() 
             else {
-            	char[] str2 =str.toCharArray();
-            	str2[str2.length]
-            	str2.toString();
-            	 return trimString());
-            	 //does not work--ARRAYS ARE IMMUTABLE
+            	String str2 =str.substring(0, str.length()-1);
+            	removesLeft--;
+            	 return trimString(str2, removesLeft);
             }
        
     }
