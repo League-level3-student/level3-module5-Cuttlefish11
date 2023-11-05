@@ -19,7 +19,7 @@ class RecursionMathTest {
     public void testDivision() {
         // Add JUnit tests to test your method
     	assertEquals(4, RecursionMath.recursiveDivision(28, 7));
-        fail("Write some tests!");
+       
         
     }
 
@@ -27,6 +27,5 @@ class RecursionMathTest {
     public void testPower() {
         // Add JUnit tests to test your method
     	assertEquals(81, RecursionMath.recursivePower(3, 4));
-        fail("Write some tests!");
     }
 }
